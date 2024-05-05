@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+}
+
+p {
+  font-family: Josefin Sans;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  top: 50px;
+}
+
+a:hover {
+  color: red;
+  animation: big .4s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes big {
+  100% {
+      font-size: 55px ;
+  }
+}
+
+.d1 {
+    position: relative;
+    right: 100px;  
+    margin-top: 300px;
+    width: 200px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .d2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate .1s infinite linear;
+  }
+  
+  .d {
+    width: 380px;
+    height: 20px;
+    position: absolute;
+  }
+  
+  .front {
+    border-radius: 7px;
+    background-color: grey;
+    transform: translateZ(10px);
+  }
+  
+  .back {
+    border-radius: 7px;
+    background-color: grey;
+    transform: rotateY(180deg) translateZ(10px);
+  }
+
+  .top {
+    border-radius: 7px;
+    background-color: grey;
+    transform: rotateX(90deg) translateZ(10px);
+  }
+  
+  .bottom {
+    border-radius: 7px;
+    background-color: grey;
+    transform: rotateX(-90deg) translateZ(10px);
+  }
+
+  
+
+  .d3 {
+    width: 15px;
+    height: 100px;
+    background-color: rgb(99, 99, 99);
+    position: relative;
+    top: -55px;
+    left: 20px;
+    border-radius:3px;
+    box-shadow: 30px 0px 0px rgb(99, 99, 99);
+    animation: top 1s infinite  ;
+  }
+
+ .d3::before {
+    content: "";
+    width: 100%;
+    height: 70%;
+    background-color: rgb(99, 99, 99);
+    border-radius: 3px;
+    position: absolute;
+    left: 15px;
+    top: -50px;
+    animation: down 1s infinite linear;
+  }
+
+  .d3::after {
+    content: "";
+    width: 250%;
+    height: 40%;
+    background-color: grey;
+    position: absolute;
+    left: 4px;
+    top: -70px;
+    border-radius: 2px;
+    animation: down 1s infinite linear;
+  }
+
+
+  .d4 {
+    width: 15px;
+    height: 100px;
+    background-color: rgb(99, 99, 99);
+    position: relative;
+    top: -155px;
+    left: 80px;
+    border-radius:3px;
+    box-shadow: 30px 0px 0px rgb(99, 99, 99);
+    animation: top2 1s infinite .3s;
+  }
+
+  .d4::before {
+    content: "";
+    width: 100%;
+    height: 70%;
+    background-color: rgb(99, 99, 99);
+    border-radius: 3px;
+    position: absolute;
+    left: 15px;
+    top: -50px;
+    animation: down 1s infinite linear;
+  }
+
+  .d4::after {
+    content: "";
+    width: 250%;
+    height: 40%;
+    background-color: grey;
+    position: absolute;
+    left: 4px;
+    top: -70px;
+    border-radius: 2px;
+    animation: down 1s infinite linear;
+  }
+ 
+  .d5 {
+    width: 15px;
+    height: 100px;
+    background-color: rgb(99, 99, 99);
+    position: relative;
+    top: -255px;
+    left: 140px;
+    border-radius:3px;
+    box-shadow: 30px 0px 0px rgb(99, 99, 99);
+    animation: top 1s infinite .7s ;
+  }
+
+ .d5::before {
+    content: "";
+    width: 100%;
+    height: 70%;
+    background-color: rgb(99, 99, 99);
+    border-radius: 3px;
+    position: absolute;
+    left: 15px;
+    top: -50px;
+    animation: down 1s infinite linear;
+  }
+
+  .d5::after {
+    content: "";
+    width: 250%;
+    height: 40%;
+    background-color: grey;
+    position: absolute;
+    left: 4px;
+    top: -70px;
+    border-radius: 2px;
+    animation: down 1s infinite linear;
+  }
+
+  .d6 {
+    width: 15px;
+    height: 100px;
+    background-color: rgb(99, 99, 99);
+    position: relative;
+    top: -355px;
+    left: 200px;
+    border-radius:3px;
+    box-shadow: 30px 0px 0px rgb(99, 99, 99);
+    animation: top2 1s infinite .9s;
+  }
+
+  .d6::before {
+    content: "";
+    width: 100%;
+    height: 70%;
+    background-color: rgb(99, 99, 99);
+    border-radius: 3px;
+    position: absolute;
+    left: 15px;
+    top: -50px;
+    animation: down 1s infinite linear;
+  }
+
+  .d6::after {
+    content: "";
+    width: 250%;
+    height: 40%;
+    background-color: grey;
+    position: absolute;
+    left: 4px;
+    top: -70px;
+    border-radius: 2px;
+    animation: down 1s infinite linear;
+  }
+
+  .d7 {
+    width: 15px;
+    height: 100px;
+    background-color: rgb(99, 99, 99);
+    position: relative;
+    top: -455px;
+    left: 260px;
+    border-radius:3px;
+    box-shadow: 30px 0px 0px rgb(99, 99, 99);
+    animation: top 1s infinite .4s;
+  }
+
+ .d7::before {
+    content: "";
+    width: 100%;
+    height: 70%;
+    background-color: rgb(99, 99, 99);
+    border-radius: 3px;
+    position: absolute;
+    left: 15px;
+    top: -50px;
+    animation: down 1s infinite linear;
+  }
+
+  .d7::after {
+    content: "";
+    width: 250%;
+    height: 40%;
+    background-color: grey;
+    position: absolute;
+    left: 4px;
+    top: -70px;
+    border-radius: 2px;
+    animation: down 1s infinite linear;
+  }
+
+  .d8 {
+    width: 15px;
+    height: 100px;
+    background-color: rgb(99, 99, 99);
+    position: relative;
+    top: -555px;
+    left: 320px;
+    border-radius:3px;
+    box-shadow: 30px 0px 0px rgb(99, 99, 99);
+    animation: top2 1s infinite .6s;
+  }
+
+  .d8::before {
+    content: "";
+    width: 100%;
+    height: 70%;
+    background-color: rgb(99, 99, 99);
+    border-radius: 3px;
+    position: absolute;
+    left: 15px;
+    top: -50px;
+    animation: down 1s infinite linear;
+  }
+
+  .d8::after {
+    content: "";
+    width: 250%;
+    height: 40%;
+    background-color: grey;
+    position: absolute;
+    left: 4px;
+    top: -70px;
+    border-radius: 2px;
+    animation: down 1s infinite linear;
+  }
+
+@keyframes rotate {
+    0% {
+      transform: rotateX(0deg) ;
+    }
+    100% {
+      transform: rotateX(360deg) ;
+    }
+  }
+  @keyframes down {
+    50% {
+        transform: translatey(10px);
+    }
+  }  
+  
+  @keyframes top2 {
+    50% {
+        transform: translatey(-35px);
+    }
+  }
+
+  @keyframes top {
+    50% {
+        transform: translatey(-35px);
+    }
+  }
+
+.d9 {
+    width: 380px;
+    height: 10px;
+    background-color: rgb(94, 94, 94);
+    position: relative;
+    top: -780px;
+    border-radius: 7px;
+}
+
+.d01 {
+    width: 10px;
+    height: 25px;
+    background-color: grey;
+    position: relative;
+    left: 35px;
+    top: -5px;
+    animation: twr 2s infinite linear;
+}
+
+.d02 {
+    width: 10px;
+    height: 25px;
+    background-color: grey;
+    position: relative;
+    left: 95px;
+    top: -30px;
+    animation: twr 2s infinite linear;
+}
+
+.d03 {
+    width: 10px;
+    height: 25px;
+    background-color: grey;
+    position: relative;
+    left: 160px;
+    top: -55px;
+    animation: twr 2s infinite linear;
+}
+
+.d04 {
+    width: 10px;
+    height: 25px;
+    background-color: grey;
+    position: relative;
+    left: 220px;
+    top: -80px;
+    animation: twr 2s infinite linear;
+}
+
+.d05 {
+    width: 10px;
+    height: 25px;
+    background-color: grey;
+    position: relative;
+    left: 280px;
+    top: -105px;
+    animation: twr 2s infinite linear;
+}
+
+.d06 {
+    width: 10px;
+    height: 25px;
+    background-color: grey;
+    position: relative;
+    left: 340px;
+    top: -130px;
+    animation: twr 2s infinite linear;
+}
+
+@keyframes twr {
+    50% {
+        transform: translatey(-15px);
+        transform: rotatex(350deg);
+    }
+}
+
+
