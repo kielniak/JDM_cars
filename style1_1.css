@@ -326,19 +326,12 @@ body {
 
 .d5 {
     display: flex;
-    position: absolute;
-    top: 580px;
 }
 
 .d5 img {
     width: 100%;
-    position: relative;
-    top: -100px;
-
+    margin-top: 400px;
 } 
 
-.d6 {
-    top: 700px;
-}
 }
 

@@ -196,7 +196,16 @@ footer div {
 
 .d5 a {
     color:#fff;
-    /* text-decoration: none; */
+   
+}
+
+.d6 {
+    margin-top: 25px;
+}
+.d6 p {
+    color: white;
+    font-size: 15px;
+    margin-left: 50px;
 }
 
 
@@ -263,9 +272,11 @@ footer div {
 
     footer div {
         display: block;
+      
     }
     footer {
-        height: 300px;
+        height: 450px;  
+        position: relative;
     }
 
     .foot img {
@@ -297,6 +308,11 @@ footer div {
 
     .d5 h1 {
         margin-left: 90px;
+    }
+
+    .d6 {
+       position: absolute;
+       top: 300px;
     }
 
 }
@@ -396,7 +412,7 @@ footer div {
         display: block;
     }
     footer {
-        height: 300px;
+        height: 450px;
     }
 
     .foot img {
@@ -405,6 +421,7 @@ footer div {
         width: 80px;
         height: 35px;
     }
+
     .d5 p {
         text-align: center;
         margin-left: 0;
